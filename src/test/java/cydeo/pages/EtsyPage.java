@@ -17,6 +17,7 @@ public class EtsyPage {
     public WebElement searchBox;
 
     @FindBy(xpath="//button[normalize-space()='Accept']")
+  //  @FindBy(xpath="//button[normalize-space()='Akzeptieren']")
     public WebElement accept;
 
 }
