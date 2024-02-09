@@ -1,3 +1,4 @@
+@tee
 Feature: The application should be running
 
   @smoke @test
