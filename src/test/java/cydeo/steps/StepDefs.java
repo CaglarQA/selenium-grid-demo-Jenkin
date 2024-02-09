@@ -11,10 +11,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
 
@@ -54,5 +52,13 @@ public class StepDefs {
         BrowserUtils.sleep(2);
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("search"));
     }
+    @When("user lands on page")
+    public void user_lands_on_page() {
+        System.out.println("google acılması gerek");
+        Driver.getDriver().findElement(By.className("sy4vM")).click();
+        WebElement searchBox = Driver.getDriver().findElement(By.id("APjFqb"));
+        searchBox.sendKeys("haberler",Keys.ENTER);
+    }
+
 
 }

@@ -14,7 +14,7 @@ public class Hooks {
 
     @Before
     public void setupMethod(){
-        Driver.getDriver().get(ConfigurationReader.getProperty("etsyUrl"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("google"));
         System.out.println("----Before--- ");
     }
 
@@ -31,7 +31,7 @@ public class Hooks {
 
 
         BrowserUtils.sleep(2);
-        Driver.closeDriver();
+        //Driver.closeDriver();
 
     }
 
