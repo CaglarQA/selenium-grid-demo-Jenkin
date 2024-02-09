@@ -52,11 +52,12 @@ public class Driver {
                 case "remote-chrome":
                     try {
                         // assign your grid server address
-                       // String gridAddress = "34.239.154.115";
-                       String gridAddress = "44.202.100.36";
-                      // String gridAddress = "54.234.152.90"; //29.12.23 Friday live Lesson Mehmet used this url. but ıdt isnt work
-                           URL url = new URL("http://"+ gridAddress + ":4444/wd/hub");
+                       String gridAddress = "34.239.154.115";
+                       //String gridAddress = "44.202.100.36";
+                    //  String gridAddress = "54.234.152.90"; //29.12.23 Friday live Lesson Mehmet used this url. but ıdt isnt work
+                       //    URL url = new URL("http://"+ gridAddress + ":4444/wd/hub");
                       //  URL url = new URL("http://"+ gridAddress + ":4444/ui");
+                        URL url = new URL("http://localhost:4444");
 
                         ChromeOptions chromeOptions = new ChromeOptions();
                         chromeOptions.addArguments("--start-maximized");
