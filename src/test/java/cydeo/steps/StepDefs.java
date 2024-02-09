@@ -58,6 +58,8 @@ public class StepDefs {
         Driver.getDriver().findElement(By.className("sy4vM")).click();
         WebElement searchBox = Driver.getDriver().findElement(By.id("APjFqb"));
         searchBox.sendKeys("haberler",Keys.ENTER);
+        Assert.assertTrue(Driver.getDriver().getTitle().contains("haberler"));
+        System.out.println("Mission Completed Succesfully");
     }
 
 
