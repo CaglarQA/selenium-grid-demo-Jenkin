@@ -54,7 +54,7 @@ public class StepDefs {
     }
     @When("user lands on page")
     public void user_lands_on_page() {
-        System.out.println("google acılması gerek");
+        System.out.println("------google acilmalmasi gerek-----");
         Driver.getDriver().findElement(By.className("sy4vM")).click();
         WebElement searchBox = Driver.getDriver().findElement(By.id("APjFqb"));
         searchBox.sendKeys("haberler",Keys.ENTER);
