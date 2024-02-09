@@ -20,4 +20,7 @@ public class EtsyPage {
   //  @FindBy(xpath="//button[normalize-space()='Akzeptieren']")
     public WebElement accept;
 
+    @FindBy(className = "sy4vM")
+    public WebElement popUp;
+
 }
