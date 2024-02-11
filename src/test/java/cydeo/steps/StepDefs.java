@@ -63,8 +63,8 @@ public class StepDefs {
       //  etsy.popUp.click();
 
 
-   //     WebElement searchBox = Driver.getDriver().findElement(By.id("APjFqb"));
-      //  searchBox.sendKeys("haberler",Keys.ENTER);
+      WebElement searchBox = Driver.getDriver().findElement(By.id("APjFqb"));
+        searchBox.sendKeys("haberler",Keys.ENTER);
         Assert.assertTrue(Driver.getDriver().getTitle().contains("haberler"));
         System.out.println("Mission Completed Succesfully");
     }
