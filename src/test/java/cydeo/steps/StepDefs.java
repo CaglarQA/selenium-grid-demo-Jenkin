@@ -55,6 +55,8 @@ public class StepDefs {
     @When("user lands on page")
     public void user_lands_on_page() {
         System.out.println("------google acilmalmasi gerek-----");
+
+        System.out.println("ramazan");
 //
 
 
