@@ -57,11 +57,11 @@ public class StepDefs {
         System.out.println("------google acilmalmasi gerek-----");
 //
 
+
         etsy.popUp.click();
 
 
-
-        WebElement searchBox = Driver.getDriver().findElement(By.id("APjFqb"));
+   //     WebElement searchBox = Driver.getDriver().findElement(By.id("APjFqb"));
         searchBox.sendKeys("haberler",Keys.ENTER);
         Assert.assertTrue(Driver.getDriver().getTitle().contains("haberler"));
         System.out.println("Mission Completed Succesfully");
