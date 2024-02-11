@@ -60,7 +60,7 @@ public class StepDefs {
 //
 
 
-        etsy.popUp.click();
+      //  etsy.popUp.click();
 
 
    //     WebElement searchBox = Driver.getDriver().findElement(By.id("APjFqb"));
