@@ -39,18 +39,21 @@ public class StepDefs {
     @When("^I search for \"([^\"]*)\"$")
     public void i_search_for(String search) throws Throwable {
         etsy.searchBox.sendKeys(search + Keys.ENTER);
+        System.out.println("Line 42");
     }
 
     @Then("^I should see the results$")
     public void i_should_see_the_results() throws Throwable {
         BrowserUtils.sleep(2);
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("search"));
+        System.out.println("Line 49");
     }
 
     @Then("^I should see more results$")
     public void i_should_see_more_results() throws Throwable {
         BrowserUtils.sleep(2);
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("search"));
+        System.out.println("Line 56");
     }
     @When("user lands on page")
     public void user_lands_on_page() {
