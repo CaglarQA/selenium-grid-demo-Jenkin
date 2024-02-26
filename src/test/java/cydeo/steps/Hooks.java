@@ -14,7 +14,7 @@ public class Hooks {
 
     @Before
     public void setupMethod(){
-        Driver.getDriver().get(ConfigurationReader.getProperty("google"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("etsyUrl"));
         System.out.println("----Before--- ");
     }
 
