@@ -47,6 +47,7 @@ public class StepDefs {
         BrowserUtils.sleep(2);
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("search"));
         System.out.println("Line 49");
+
     }
 
     @Then("^I should see more results$")
